@@ -1,6 +1,8 @@
 
 // Bootstrap Variables
 $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+$container-large-desktop: 1025px;
+$grid-gutter-width: 10px;
 
 // Import Bootstrap
 @import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
@@ -15,3 +17,164 @@ $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 img {
   max-width: 100%;
 }
+
+li {
+  list-style: none;
+}
+
+
+/**************************************************************************
+HEADER
+**************************************************************************/
+
+header{
+  background-color: #F5F5F5;
+  height: 48px;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+#navigation {
+  display: inline-block;
+  margin-top: 8px;
+  margin-left: 125px;
+  color: black;
+
+  a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 13px;
+  }
+
+
+  .github-logo{
+    display: inline-block;
+  }
+
+  .github-search{
+    display: inline-block;
+    margin-left: 8px;
+
+    .site-search{
+      width: 350px;
+    }
+  }
+
+  .pull-req{
+    display: inline-block;
+    margin-left: 18px;
+  }
+
+  .issues{
+    display: inline-block;
+    margin-left: 18px;
+  }
+
+  .gist{
+    display: inline-block;
+    margin-left: 18px;
+  }
+
+  .create-new{
+    display: inline-block;
+    margin-left: 300px;
+  }
+
+  .view-profile{
+    display: inline-block;
+  }
+}
+
+
+/**************************************************************************
+MAIN SIDEBAR
+**************************************************************************/
+
+
+
+#account-cont{
+  display: inline-block;
+  padding-left: 0px;
+
+  .user{
+    border-bottom: 1px solid #EEEEEE;
+    width: 231px;
+  }
+
+    .user-name {
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 3px;
+    }
+
+    .account-name {
+      font-size: 20px;
+      font-weight: 300;
+      color: #666666;
+      margin-top: 2px;
+      margin-bottom: 14px;
+    }
+
+  .email {
+    margin-top: 14px;
+  }
+
+  .date-joined{
+    display: inline-block;
+  }
+}
+
+
+.main-cont{
+  margin-top: 20px;
+}
+
+.profile-pic{
+  height: 230px;
+  width: 230px;
+  border: 2px solid grey;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.data-tracking {
+
+  .followers{
+    display: inline-block;
+  }
+
+  .starred{
+    display: inline-block;
+  }
+
+  .following{
+    display: inline-block;
+  }
+}
+
+
+
+/**************************************************************************
+MAIN BODY
+**************************************************************************/
+
+
+
+#contributions{
+  display: inline-block;
+  width: 100%;
+  // padding-left: 18px;
+}
+
+
+/**************************************************************************
+HEADER
+**************************************************************************/
+
+
+
+
+
+/**************************************************************************
+HEADER
+**************************************************************************/

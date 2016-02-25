@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
     <title>tiy_02_25_github page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
@@ -12,23 +13,23 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-12">
-            <ul id="navigation">
-              <li class="github-logo">
-                <img src="#">
-              </li>
-              <li class="github-search">
-                <input type="text">
-              </li>
-              <li class="pull-req"><a href="#"></a></li>
-              <li class="issues"><a href="#"></a></li>
-              <li class="gist"><a href="#"></a></li>
-              <li class="create-new">
-                <div class="add-button"></div>
-              </li>
-              <li class="view-profile">
-                <div class="profile-button"></div>
-              </li>
-            </ul>
+            <div id="navigation">
+              <div class="github-logo">
+                <img src="images/GitHub-Mark-32px.png">
+              </div>
+              <div class="github-search">
+                <input type="text" class="site-search">
+              </div>
+              <div class="pull-req"><a href="#">Pull Requests</a></div>
+              <div class="issues"><a href="#">Issues</a></div>
+              <div class="gist"><a href="#">Gists</a></div>
+              <div class="create-new">
+                <div class="add-button"><i class="fa fa-plus"></i></div>
+              </div>
+              <div class="view-profile">
+                <div class="profile-button"><i class="fa fa-picture-o"></i></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -36,19 +37,46 @@
 
   <div class="container">
     <main>
-      <div class="row">
-        <div class="col-m-4">
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
+      <div class="row main-cont">
+        <div class="col-md-3">
+          <div id="profile-sidebar">
+            <img src="" class="profile-pic">
+            <ul id="account-cont">
+              <li class="user">
+                <h1 class="user-name">Andrew Rymer</h1>
+                <h4 class="account-name">Bruemor33</h4>
+              </li>
+              <li class="email">
+                <span id="envo"><i class="fa fa-envelope-o"></i></span><a href="#">arymer1@gmail.com</a>
+              </li>
+              <li class="joined-date">
+                <span id="date"><i class="fa fa-clock-o"></i></span><p class="date-joined">Joined on Jan 24, 2016</p>
+              </li>
+              <li class="data-tracking">
+                <div class="followers">
+                  <h2>0</h2>
+                  <h6>Followers</h6>
+                </div>
+                <div class="starred">
+                  <h2>0</h2>
+                  <h6>Starred</h6>
+                </div>
+                <div class="following">
+                  <h2>0</h2>
+                  <h6>Following</h6>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="col-md-8">
-          <div id="Contributions">
-            <h4>Contributions</h4>
+        <div class="col-md-9">
+          <div id="contributions">
+            <ul class="nav nav-tabs">
+              <li role="presentation" class="active"><a href="#">Contributions</a></li>
+              <li role="presentation"><a href="#">Repositories</a></li>
+              <li role="presentation"><a href="#">Public Activity</a></li>
+            </ul>
+            <!-- <h4>Contributions</h4>
             <ul>
               <h5>Popular Repos</h5>
               <li><a href="#"></a></li>
@@ -56,7 +84,7 @@
               <li><a href="#"></a></li>
               <li><a href="#"></a></li>
               <li><a href="#"></a></li>
-            </ul>
+            </ul> -->
           </div>
           <div id="Repositories">
 
