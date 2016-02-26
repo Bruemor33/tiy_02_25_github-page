@@ -46,24 +46,26 @@
                 <h1 class="user-name">Andrew Rymer</h1>
                 <h4 class="account-name">Bruemor33</h4>
               </li>
-              <li class="email">
-                <span id="envo"><i class="fa fa-envelope-o"></i></span><a href="#">arymer1@gmail.com</a>
-              </li>
-              <li class="joined-date">
-                <span id="date"><i class="fa fa-clock-o"></i></span><p class="date-joined">Joined on Jan 24, 2016</p>
-              </li>
+              <div class="contact-cont">
+                <li class="email">
+                  <span id="envo"><i class="fa fa-envelope-o"></i></span><a href="#">arymer1@gmail.com</a>
+                </li>
+                <li class="joined-date">
+                  <span id="date"><i class="fa fa-clock-o"></i></span><p class="date-joined">Joined on Jan 24, 2016</p>
+                </li>
+              </div>
               <li class="data-tracking">
                 <div class="followers">
-                  <h2>0</h2>
-                  <h6>Followers</h6>
+                  <h2 class="social-number">0</h2>
+                  <h6 class="social-cat">Followers</h6>
                 </div>
                 <div class="starred">
-                  <h2>0</h2>
-                  <h6>Starred</h6>
+                  <h2 class="social-number">0</h2>
+                  <h6 class="social-cat">Starred</h6>
                 </div>
                 <div class="following">
-                  <h2>0</h2>
-                  <h6>Following</h6>
+                  <h2 class="social-number">0</h2>
+                  <h6 class="social-cat">Following</h6>
                 </div>
               </li>
             </ul>
@@ -72,21 +74,12 @@
         <div class="col-md-9">
           <div id="contributions">
             <ul class="nav nav-tabs">
-              <li role="presentation" class="active"><a href="#">Contributions</a></li>
-              <li role="presentation"><a href="#">Repositories</a></li>
+              <li role="presentation"><a href="#">Contributions</a></li>
+              <li role="presentation" class="active repo-list"><a href="#">Repositories</a></li>
               <li role="presentation"><a href="#">Public Activity</a></li>
             </ul>
-            <!-- <h4>Contributions</h4>
-            <ul>
-              <h5>Popular Repos</h5>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-            </ul> -->
           </div>
-          <div id="Repositories">
+          <div id="repositories">
 
           </div>
           <div id="Public Activity">
@@ -100,6 +93,23 @@
 
     </footer>
   </div>
+  <script id="repo-page" type="text/x-handlebars-template">
+
+      <div class="results">
+        <div class="col-md-9 result-images">
+          <a href="#" class="repoName">{{repoName}}</a>
+          <div class="updated-time">{{updatedAt}}</div>
+          <div class="programming-language">{{lang}}</div>
+          <div class="star-gazer"><a href="#">{{starGaze}}</a></div>
+          <div class="getting-forked"><a href="#">{{forking}}</a></div>
+        </div>
+        <dvi class="current-code">
+          <p class="code-label">{{hello}}</p>
+        </dvi>
+      </div>
+
+    </div>
+  </script>
 
     <script src="js/bundle.js"></script>
   </body>
