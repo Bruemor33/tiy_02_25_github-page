@@ -55,8 +55,9 @@ header{
     display: inline-block;
     margin-left: 8px;
 
-    .site-search{
+    .form-control{
       width: 350px;
+      height: 28px;
     }
   }
 
@@ -190,7 +191,7 @@ MAIN SIDEBAR
 
 
 /**************************************************************************
-MAIN BODY
+MAIN HEADER
 **************************************************************************/
 
 
@@ -199,14 +200,177 @@ MAIN BODY
   display: inline-block;
   width: 100%;
   // padding-left: 18px;
+
+  .octicon-diff-added {
+    padding-right: 6px;
+  }
+
+  .octicon-repo {
+    padding-right: 6px;
+  }
+
+  .octicon-rss {
+    padding-right: 6px;
+  }
+}
+
+.repo-top-bar {
+  padding-top: 9px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.repo-search {
+  display: inline-block;
+
+  .form-control{
+    width: 255px;
+  }
+}
+
+.repo-search-button {
+  display: inline-block;
+
+  .btn {
+    position: relative;
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #333;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: #eee;
+    background-image: linear-gradient(#fcfcfc, #eee);
+    border: 1px solid #d5d5d5;
+
+  }
+}
+
+.reop-nav-links{
+  display: inline-block;
+  margin-left: 20px;
+
+  .all {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 14px;
+    padding-right: 6px;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+  .public {
+    display: inline-block;
+    padding-right: 6px;
+  }
+
+  .private {
+    display: inline-block;
+    padding-right: 6px;
+  }
+
+  .sources {
+    display: inline-block;
+    padding-right: 6px;
+  }
+
+  .forks {
+    display: inline-block;
+    padding-right: 6px;
+  }
+
+  .mirrors {
+    display: inline-block;
+  }
+}
+
+.repo-new-button{
+  float: right;
+  display: inline-block;
+
+  .octicon-repo {
+    padding-right: 3px;
+  }
+
+  .btn-primary {
+    display: inline-block;
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.15);
+    background-color: #60b044;
+    background-image: linear-gradient(#8add6d, #60b044);
+    border-color: #5ca941;
+
+    .btn {
+      position: relative;
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 13px;
+    }
+  }
 }
 
 
+
+
 /**************************************************************************
-HEADER
+MAIN REPOSITORIES
 **************************************************************************/
 
+.result-images {
+  margin-top: 45px;
+  padding-bottom: 50px;
+  width: 100%;
+  border-bottom: 1px solid #eeeeee;
+}
 
+.repoName {
+  display: inline-block;
+
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+  }
+}
+
+.updated-time {
+  display: inline-block;
+}
+
+.repo-stats-container{
+  float: right;
+  // position: relative;
+  // left: 190px;
+  color: #888888;
+
+  .octicon-star {
+    padding-right: 5px;
+  }
+
+  .octicon-git-branch {
+    padding-right: 5px;
+  }
+
+  .programming-language {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 12px;
+    padding-right: 10px;
+  }
+
+  .star-gazer {
+    display: inline-block;
+    padding-right: 10px;
+  }
+
+  .getting-forked {
+    display: inline-block;
+  }
+}
 
 
 
