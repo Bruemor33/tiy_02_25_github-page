@@ -41,35 +41,7 @@
       <div class="row main-cont">
         <div class="col-md-3">
           <div id="profile-sidebar">
-            <img src="" class="profile-pic">
-            <ul id="account-cont">
-              <li class="user">
-                <h1 class="user-name">Andrew Rymer</h1>
-                <h4 class="account-name">Bruemor33</h4>
-              </li>
-              <div class="contact-cont">
-                <li class="email">
-                  <span class="octicon octicon-mail"></span><a href="#">arymer1@gmail.com</a>
-                </li>
-                <li class="joined-date">
-                  <span id="date"><i class="fa fa-clock-o"></i></span><p class="date-joined">Joined on Jan 24, 2016</p>
-                </li>
-              </div>
-              <li class="data-tracking">
-                <div class="followers">
-                  <h2 class="social-number">0</h2>
-                  <h6 class="social-cat">Followers</h6>
-                </div>
-                <div class="starred">
-                  <h2 class="social-number">0</h2>
-                  <h6 class="social-cat">Starred</h6>
-                </div>
-                <div class="following">
-                  <h2 class="social-number">0</h2>
-                  <h6 class="social-cat">Following</h6>
-                </div>
-              </li>
-            </ul>
+
           </div>
         </div>
         <div class="col-md-9">
@@ -109,21 +81,77 @@
       </div>
     </main>
 
-    <footer>
-
+    <footer id="footer">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="copy-write">
+            <p>© 2016 GitHub, Inc.</p>
+          </div>
+          <div class="tos"><a href="#">Terms</a></div>
+          <div class="privicy"><a href="#">Privicy</a></div>
+          <div class="security"><a href="#">Security</a></div>
+          <div class="contact"><a href="#">Contact</a></div>
+          <div class="help"><a href="#">Help</a></div>
+          <div class="footer-logo">
+            <i class="fa fa-rebel fa-2x"></i>
+          </div>
+          <div class="status"><a href="#">Status</a></div>
+          <div class="api-link"><a href="#">API</a></div>
+          <div class="training"><a href="#">Training</a></div>
+          <div class="shop"><a href="#">Shop</a></div>
+          <div class="blog"><a href="#">Blog</a></div>
+          <div class="about"><a href="#">About</a></div>
+          <div class="pricing"><a href="#">Pricing</a></div>
+        </div>
+      </div>
     </footer>
+
   </div>
+  <script id="profile-page" type="text/x-handlebars-template">
+
+    <img src="{{profilePic}}" class="profile-pic">
+    <ul id="account-cont">
+      <li class="user">
+        <h1 class="user-name">{{fullName}}</h1>
+        <h4 class="account-name">{{userName}}</h4>
+      </li>
+      <div class="contact-cont">
+        <li class="email">
+          <span class="octicon octicon-mail"></span><a href="#">{{userEmail}}</a>
+        </li>
+        <li class="joined-date">
+          <span id="date"><i class="fa fa-clock-o"></i></span><p class="date-joined">{{joinedAt}}</p>
+        </li>
+      </div>
+      <li class="data-tracking">
+        <div class="followers">
+          <h2 class="social-number">0</h2>
+          <h6 class="social-cat">Followers</h6>
+        </div>
+        <div class="starred">
+          <h2 class="social-number">0</h2>
+          <h6 class="social-cat">Starred</h6>
+        </div>
+        <div class="following">
+          <h2 class="social-number">0</h2>
+          <h6 class="social-cat">Following</h6>
+        </div>
+      </li>
+    </ul>
+
+  </script>
+
   <script id="repo-page" type="text/x-handlebars-template">
 
       <div class="results">
         <div class="col-md-9 result-images">
-          <a href="#" class="repoName">{{repoName}}</a>
-          <!-- <div class="updated-time">{{updatedAt}}</div> -->
+          <a href="{{repoUrl}}" class="repoName">{{repoName}}</a>
           <div class="repo-stats-container">
             <div class="programming-language">{{lang}}</div>
             <div class="star-gazer"><span class="octicon octicon-star"></span><a href="#">{{starGaze}}</a></div>
             <div class="getting-forked"><span class="octicon octicon-git-branch"></span><a href="#">{{forking}}</a></div>
           </div>
+          <div class="updated-time">{{updatedAt}}</div>
         </div>
         <dvi class="current-code">
           <p class="code-label">{{hello}}</p>

@@ -1528,7 +1528,7 @@ pre {
       width: 950px; } }
   @media (min-width: 1200px) {
     .container {
-      width: 1025px; } }
+      width: 990px; } }
 
 .container-fluid {
   margin-right: auto;
@@ -5831,7 +5831,7 @@ header {
 #navigation {
   display: inline-block;
   margin-top: 8px;
-  margin-left: 125px;
+  margin-left: 145px;
   color: black; }
   #navigation a {
     text-decoration: none;
@@ -5839,27 +5839,41 @@ header {
     font-weight: bold;
     font-size: 13px; }
   #navigation .github-logo {
-    display: inline-block; }
+    display: inline-block;
+    position: relative;
+    top: 2px; }
   #navigation .github-search {
     display: inline-block;
+    position: relative;
+    bottom: 3px;
     margin-left: 8px; }
     #navigation .github-search .form-control {
       width: 350px;
       height: 28px; }
   #navigation .pull-req {
     display: inline-block;
+    position: relative;
+    bottom: 2px;
     margin-left: 18px; }
   #navigation .issues {
     display: inline-block;
+    position: relative;
+    bottom: 2px;
     margin-left: 18px; }
   #navigation .gist {
     display: inline-block;
+    position: relative;
+    bottom: 2px;
     margin-left: 18px; }
   #navigation .create-new {
     display: inline-block;
+    position: relative;
+    bottom: 2px;
     margin-left: 300px; }
   #navigation .view-profile {
-    display: inline-block; }
+    display: inline-block;
+    position: relative;
+    bottom: 2px; }
 
 /**************************************************************************
 MAIN SIDEBAR
@@ -5933,6 +5947,8 @@ MAIN HEADER
 #contributions {
   display: inline-block;
   width: 100%; }
+  #contributions .nav-tabs a {
+    color: #555555; }
   #contributions .octicon-diff-added {
     padding-right: 6px; }
   #contributions .octicon-repo {
@@ -6014,23 +6030,20 @@ MAIN HEADER
 MAIN REPOSITORIES
 **************************************************************************/
 .result-images {
-  margin-top: 45px;
-  padding-bottom: 50px;
+  margin-top: 20px;
+  padding-bottom: 30px;
   width: 100%;
   border-bottom: 1px solid #eeeeee; }
-
-.repoName {
-  display: inline-block; }
-  .repoName a {
+  .result-images .repoName {
+    display: inline-block;
     text-decoration: none;
     font-weight: bold;
-    font-size: 24px; }
-
-.updated-time {
-  display: inline-block; }
+    font-size: 18px; }
 
 .repo-stats-container {
   float: right;
+  position: relative;
+  top: 10px;
   color: #888888; }
   .repo-stats-container .octicon-star {
     padding-right: 5px; }
@@ -6048,7 +6061,72 @@ MAIN REPOSITORIES
     display: inline-block; }
 
 /**************************************************************************
-HEADER
+FOOTER
+**************************************************************************/
+#footer {
+  border-top: 1px solid #eeeeee;
+  padding-top: 35px;
+  margin-bottom: 35px; }
+  #footer .copy-write {
+    display: inline-block;
+    font-size: 12px;
+    color: #767676;
+    margin-right: 15px; }
+  #footer .tos {
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 15px; }
+  #footer .privicy {
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 15px; }
+  #footer .security {
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 15px; }
+  #footer .contact {
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 15px; }
+  #footer .help {
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 99px; }
+  #footer .footer-logo {
+    display: inline-block;
+    font-size: 12px;
+    color: #CCCCCC;
+    margin-right: 135px; }
+  #footer .status {
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 15px; }
+  #footer .api-link {
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 15px; }
+  #footer .training {
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 15px; }
+  #footer .shop {
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 15px; }
+  #footer .blog {
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 15px; }
+  #footer .about {
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 15px; }
+  #footer .pricing {
+    display: inline-block;
+    font-size: 12px; }
+
+/**************************************************************************
+THE END!
 **************************************************************************/
 
 /*# sourceMappingURL=app.css.map */
