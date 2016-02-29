@@ -3,7 +3,7 @@ console.log("Hello World!");
 var $ = require('jquery');
 var _ = require('underscore');
 var handlebars = require('handlebars');
-var githubtoken = require('./githubtoken.js').token;
+var githubtoken; //require('./githubtoken.js').token;
 var moment = require('moment');
 var usersUrl = 'https://api.github.com/users/Bruemor33';
 var userReopUrl = 'https://api.github.com/users/Bruemor33/repos';
