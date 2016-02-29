@@ -5,7 +5,7 @@ console.log("Hello World!");
 var $ = require('jquery');
 var _ = require('underscore');
 var handlebars = require('handlebars');
-var githubtoken; //require('./githubtoken.js').token;
+var githubtoken; //
 var moment = require('moment');
 var usersUrl = 'https://api.github.com/users/Bruemor33';
 var userReopUrl = 'https://api.github.com/users/Bruemor33/repos';
@@ -38,7 +38,7 @@ function getRepos(){ //create the function to make a get request to the repo url
       var source = $('#repo-page').html(); //where our handlebars script begins, or resides in our html
       var template = handlebars.compile(source); //the compile magic of our template
       var html = template(repoContext); //pulling out data into the template
-      //moment(repoContext.updatedAt).startOf('minute').fromNow().append(html); //not really sure on where to place this.
+      repo.updatedAt = moment(repoContext.updatedAt).startOf('minute').fromNow().append(html); //not really sure on where to place this.
       $('#repositories').append(html); //appending our data to the placeholder div in our html layout.
 
     });
